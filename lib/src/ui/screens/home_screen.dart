@@ -13,12 +13,13 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Text(
+              'Samuel Jackson',
+              style: Theme.of(context).textTheme.headline1,
             ),
             Text(
-              '0',
-              style: Theme.of(context).textTheme.headline4,
+              'Here is some regular ol text',
+              style: Theme.of(context).textTheme.bodyText1,
             ),
           ],
         ),
