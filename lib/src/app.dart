@@ -7,7 +7,7 @@ class PortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SamJackson.getInfo()',
+      title: 'Sam Jackson',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: 'Comfortaa',
