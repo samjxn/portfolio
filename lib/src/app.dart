@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/src/ui/screens/home_screen.dart';
+import 'package:portfolio/src/ui/screens/home/home_screen.dart';
 
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({Key? key}) : super(key: key);

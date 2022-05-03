@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:native_scroll/native_scroll.dart';
 import 'package:portfolio/src/ui/screens/home/widgets/home_sliver_app_bar.dart';
+import 'package:portfolio/src/ui/screens/home/widgets/sliver_test_widget.dart';
 
 const List<String> animals = [
   'dog',
@@ -116,7 +117,9 @@ class HomeScreen extends StatelessWidget {
     return CustomScrollView(
       controller: scrollController,
       slivers: [
-        HomeSliverAppBar(),
+        const SliverTestWidget(
+          child: HomeSliverAppBar(),
+        ),
         SliverList(
           delegate: SliverChildBuilderDelegate(
             (context, index) => renderName(names[index]),

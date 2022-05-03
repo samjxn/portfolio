@@ -5,19 +5,16 @@ class HomeSliverAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _buildAppBar();
+    return _buildAppBar(context);
   }
 
-  Widget _buildAppBar() {
-    return SliverAppBar(
-      expandedHeight: 200,
-      flexibleSpace: FlexibleSpaceBar(
-        background: DecoratedBox(
-          decoration: BoxDecoration(color: Colors.blue),
-          child: Center(
-            child: Text('Sam Jackson?'),
-          ),
-        ),
+  Widget _buildAppBar(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      color: theme.primaryColor,
+      child: Text(
+        'Samuel Jackson',
+        style: theme.textTheme.headline1,
       ),
     );
   }
